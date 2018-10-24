@@ -1,0 +1,14 @@
+<div class="row">
+    <div class="col-md-3" *ngFor="let m of movies">
+      <div class="card">
+        <img class="card-img-top" src={{m.poster}} alt="Card image cap">
+        <div>
+          <h5 class="card-title">{{m.title}}</h5>
+          <p class="card-text"><small class="text-muted">{{m.year}}, {{m.type}}</small></p>
+          <a href="javascript:void(0);" class="card-link">Detalhes</a>
+        </div>
+      </div>
+    </div>
+    <div style="padding-top: 1%">
+    </div>
+</div>
