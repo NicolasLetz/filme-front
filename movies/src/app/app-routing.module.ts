@@ -2,10 +2,11 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 import { MovieComponent } from './movie/movie.component';
+import { MovieDetailComponent } from './movie-detail/movie-detail.component';
 
 const routes: Routes = [
-  // {path: 'movie/:texto', component: MovieComponent},
-  {path: '', component: MovieComponent}
+  {path: '', component: MovieComponent},
+  {path: 'detalhe/:imdbID', component: MovieDetailComponent}
 ];
 
 

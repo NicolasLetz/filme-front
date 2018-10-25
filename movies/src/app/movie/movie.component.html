@@ -5,7 +5,7 @@
         <div>
           <h5 class="card-title">{{m.title}}</h5>
           <p class="card-text"><small class="text-muted">{{m.year}}, {{m.type}}</small></p>
-          <a href="javascript:void(0);" class="card-link">Detalhes</a>
+          <a href="" (click)="getDetailsMovie(m.imdbID)" [routerLink]='["/detalhe", m.imdbID]' class="card-link">Detalhes</a>
         </div>
       </div>
     </div>

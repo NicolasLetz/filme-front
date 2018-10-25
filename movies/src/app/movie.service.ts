@@ -18,6 +18,8 @@ export class MovieService {
   getListaMoviesFromOMDB(texto: string) : Observable<Movie[]>{
     return this.http.get<Movie[]>('http://localhost:8080/'+ texto);
   }
-
+  getDetailsMovie(imdbID: string): Observable<Movie>{
+    return this.http.get<Movie>('http://localhost:8080/detalhes/' + imdbID);
+  }
  }
 
